@@ -8,6 +8,11 @@ public class Character : MonoBehaviour
     private IAttackStrategy currentStrategy;
     private AttackPerformer performer;
 
+    private void Start()
+    {
+        performer = new AttackPerformer();
+    }
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Q))

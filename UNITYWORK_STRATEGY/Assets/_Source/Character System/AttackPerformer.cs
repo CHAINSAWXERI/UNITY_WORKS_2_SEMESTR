@@ -13,24 +13,21 @@ public class AttackPerformer
         {
             Debug.Log("4");
             character.SetStrategy(new Attack1Strategy());
-            Debug.Log("7");
-            character.PerformAttack();
-            Debug.Log("10");
         }
         else if (attackType == 2)
         {
             character.SetStrategy(new Attack2Strategy());
-            character.PerformAttack();
         }
         else if (attackType == 3)
         {
             character.SetStrategy(new Attack3Strategy());
-            character.PerformAttack();
         }
         else
         {
             character.SetStrategy(new NoAttackStrategy());
-            character.PerformAttack();
         }
+        Debug.Log("7");
+        character.PerformAttack();
+        Debug.Log("10");
     }
 }
