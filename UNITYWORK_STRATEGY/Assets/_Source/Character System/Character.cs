@@ -2,33 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 
 public class Character : MonoBehaviour
 {
     private IAttackStrategy currentStrategy;
-    private AttackPerformer performer;
-
-    private void Start()
-    {
-        performer = new AttackPerformer();
-    }
+    public AttackPerformer performer;
+    public Attack1Strategy _attack1Strategy;
+    public Attack2Strategy _attack2Strategy;
+    public Attack3Strategy _attack3Strategy;
+    public NoAttackStrategy _noAttackStrategy;
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            Debug.Log("1");
             PerformQAttack();
         }
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             PerformWAttack();
         }
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             PerformEAttack();
         }
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             PerformDAttack();
         }
@@ -36,37 +35,32 @@ public class Character : MonoBehaviour
 
     public void PerformQAttack()
     {
-        Debug.Log("2");
-        performer.PerformAttack(1);
+        performer.PerformAttack(_attack1Strategy); ///
     }
 
     public void PerformWAttack()
     {
-        performer.PerformAttack(2);
+        performer.PerformAttack(_attack2Strategy);
     }
 
     public void PerformEAttack()
     {
-        performer.PerformAttack(3);
+        performer.PerformAttack(_attack3Strategy);
     }
 
     public void PerformDAttack()
     {
-        performer.PerformAttack(4);
+        performer.PerformAttack(_noAttackStrategy); ///
     }
 
     public void SetStrategy(IAttackStrategy strategy)
     {
-        Debug.Log("5");
         currentStrategy = strategy;
-        Debug.Log("6");
     }
 
     public void PerformAttack()
     {
-        Debug.Log("8");
-        currentStrategy.PerformAttack();
-        Debug.Log("9");
+        currentStrategy.PerformAttack(); ///
     }
 }
 
