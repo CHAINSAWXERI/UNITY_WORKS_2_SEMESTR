@@ -12,6 +12,7 @@ public class Boostrapper : MonoBehaviour
         character._attack1Strategy = new Attack1Strategy();
         character._attack2Strategy = new Attack2Strategy();
         character._attack3Strategy = new Attack3Strategy();
+        character._noAttackStrategy = new NoAttackStrategy();
     }
 
 }

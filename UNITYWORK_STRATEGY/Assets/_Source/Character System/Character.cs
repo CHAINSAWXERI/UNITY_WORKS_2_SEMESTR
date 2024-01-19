@@ -13,6 +13,8 @@ public class Character : MonoBehaviour
     public Attack3Strategy _attack3Strategy;
     public NoAttackStrategy _noAttackStrategy;
 
+    [SerializeField] public Animator _animator;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -60,7 +62,7 @@ public class Character : MonoBehaviour
 
     public void PerformAttack()
     {
-        currentStrategy.PerformAttack(); ///
+            currentStrategy.PerformAttack(_animator);
     }
 }
 
