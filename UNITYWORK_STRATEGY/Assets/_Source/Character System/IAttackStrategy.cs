@@ -1,6 +1,7 @@
 using System;
+using UnityEngine;
 
 public interface IAttackStrategy
 {
-    void PerformAttack();
+    void PerformAttack(Animator _animator);
 }

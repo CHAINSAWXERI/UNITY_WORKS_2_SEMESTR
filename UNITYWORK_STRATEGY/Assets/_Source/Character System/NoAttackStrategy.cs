@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NoAttackStrategy : IAttackStrategy
 {
-    public void PerformAttack()
+    public void PerformAttack(Animator _animator)
     {
         Debug.Log("Вы не выполняете атаку");
+        _animator.SetInteger("PlayAttack", 0);
     }
 }
