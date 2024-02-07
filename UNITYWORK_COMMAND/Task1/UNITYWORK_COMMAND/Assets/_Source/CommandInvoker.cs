@@ -6,7 +6,7 @@ public class CommandInvoker
 {
     ICommand command;
 
-    public CommandInvoker(ICommand com)
+    public void ChangeCommand(ICommand com)
     {
         command = com;
     }
