@@ -1,0 +1,9 @@
+Туториал - https://www.youtube.com/watch?v=eTERzR4Yu5U
+
+https://assetstore.unity.com/packages/tools/animation/procedural-walk-animation-244662
+
+https://www.youtube.com/watch?v=e6Gjhr1IP6w
+
+Реф - https://github.com/PhilS94/Unity-Procedural-IK-Wall-Walking-Spider
+
+https://gameassetsfree.com/assets/107815-simple-procedural-walk-5-0-unreal-engine/
