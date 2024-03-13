@@ -12,8 +12,8 @@ public class MoneyController
         _moneyView = _view;
     }
 
-    public void MoneyUpdate()
+    public void MoneyUpdate(int value)
     {
-
+        _moneyModel.value = value;
     }
 }

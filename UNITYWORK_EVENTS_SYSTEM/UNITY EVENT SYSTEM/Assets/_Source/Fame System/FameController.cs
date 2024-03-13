@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class FameController
 {
@@ -13,8 +12,8 @@ public class FameController
         _fameView = _view;
     }
 
-    public void FameUpdate()
+    public void FameUpdate(int value)
     {
-
+        _fameModel.value = value;
     }
 }

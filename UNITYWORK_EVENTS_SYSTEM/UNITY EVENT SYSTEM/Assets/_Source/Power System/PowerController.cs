@@ -12,8 +12,8 @@ public class PowerController : MonoBehaviour
         _powerView = _view;
     }
 
-    public void PowerUpdate()
+    public void PowerUpdate(int value)
     {
-
+        _powerModel.value = value;
     }
 }
