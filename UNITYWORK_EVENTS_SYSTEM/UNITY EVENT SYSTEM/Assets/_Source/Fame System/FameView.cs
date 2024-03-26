@@ -8,7 +8,7 @@ public class FameView : MonoBehaviour
     [SerializeField] public TMP_Text text;
     public FameModel fameModel;
 
-    private void Update()
+    public void Update()
     {
         text.text = fameModel.value.ToString();
     }

@@ -25,8 +25,6 @@ public class Boostraper : MonoBehaviour
 
         fameModel = new FameModel();
         fameController = new FameController(fameView, fameModel);
-
-
     }
 
 
