@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoinName: {fileID: 4013220011772461662}
   Price: {fileID: 4838318915749583074}
+  ViewImage: {fileID: 4400439120785923284}
   coinData: {fileID: 0}
 --- !u!1 &565931523382567527
 GameObject:

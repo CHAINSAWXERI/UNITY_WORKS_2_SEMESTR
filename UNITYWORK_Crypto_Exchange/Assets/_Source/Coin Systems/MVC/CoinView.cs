@@ -11,15 +11,10 @@ public class CoinView : MonoBehaviour
     [SerializeField] public Image ViewImage;
     public Coin coinData;
 
-    void Start()
-    {
-        CoinName.text = coinData.Name;
-        ViewImage.sprite = coinData.View;
-        Price.text = ((coinData.minValue + coinData.maxValue) / 2) + "$";
-    }
-
     void Update()
     {
         CoinName.text = coinData.Name;
+        ViewImage.sprite = coinData.View;
+        Price.text = coinData.price + "";
     }
 }

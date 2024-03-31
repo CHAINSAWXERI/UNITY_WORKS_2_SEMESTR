@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee10bf424f42b14f9bf29d3f279815e, type: 3}
+  m_Name: WalletData
+  m_EditorClassIdentifier: 
+  walletData:
+  - coin: {fileID: 11400000, guid: c3daa5cdb8916c740a89eaf68f60eec0, type: 2}
+    Quantity: 0
+  - coin: {fileID: 11400000, guid: 046f70eec25b4554d9e1471b60103a52, type: 2}
+    Quantity: 0
+  - coin: {fileID: 11400000, guid: f8a9ea315b122e549990a95c7e87e4f1, type: 2}
+    Quantity: 0
+  - coin: {fileID: 11400000, guid: 00c188ace70bb0d4981eb8fcad55a6be, type: 2}
+    Quantity: 0
+  - coin: {fileID: 11400000, guid: d58a292a2edf36741b8b5e7edf54d028, type: 2}
+    Quantity: 0
+  Balance: 118775.21926879883
