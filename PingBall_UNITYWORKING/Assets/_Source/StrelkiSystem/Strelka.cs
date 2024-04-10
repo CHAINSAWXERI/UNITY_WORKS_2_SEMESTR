@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Strelka : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] public Animator animator;
+    [SerializeField] public KeyCode keycode;
+    private bool isSpacePressed = false;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(keycode))
+        {
+            //animator.IsOn = true;
+            Debug.Log("?????? ??? ?????!");
+            isSpacePressed = true;
+        }
+
+        if (Input.GetKeyUp(keycode))
+        {
+            // ???? ??, ????????? ????????
+            Debug.Log("?????? ??? ???????!");
+            isSpacePressed = false;
+        }
     }
+
 }
