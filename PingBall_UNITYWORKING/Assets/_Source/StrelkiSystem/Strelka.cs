@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class Strelka : MonoBehaviour
 {
-    [SerializeField] public Animator animator;
-    [SerializeField] public KeyCode keycode;
-    private bool isSpacePressed = false;
+    [SerializeField] private Animator animator;
+    [SerializeField] private KeyCode keycode;
+
+    private bool isKeyPressed = false;
 
     void Update()
     {
-        if (Input.GetKeyDown(keycode))
+        if (Input.GetKeyDown(keycode) && !isKeyPressed)
         {
-            //animator.IsOn = true;
-            Debug.Log("?????? ??? ?????!");
-            isSpacePressed = true;
+            Debug.Log("BOO!");
+            animator.SetBool("IsUp", true);
+            isKeyPressed = true;
         }
-
-        if (Input.GetKeyUp(keycode))
+        else if (Input.GetKeyUp(keycode) && isKeyPressed)
         {
-            // ???? ??, ????????? ????????
-            Debug.Log("?????? ??? ???????!");
-            isSpacePressed = false;
+            animator.SetBool("IsUp", false);
+            isKeyPressed = false;
         }
     }
-
 }
+
